@@ -1,0 +1,6 @@
+- name: codedeploy_deploy
+  service: awsdeployment
+  command: codeship_aws_codedeploy_deploy /deploy Lumen LumenFleet codedeploy-us-east-1-998193773752
+- name: elastic_beanstalk_deploy
+  service: awsdeployment
+  command: codeship_aws_eb_deploy /deploy Lumen Default-Environment elasticbeanstalk-us-east-1-998193773752
